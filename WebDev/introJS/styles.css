@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Monocraft;
+    src: url('Monocraft.ttf');
+    src: local('Monocraft'), local('Monocraft'),
+    url("Monocraft.ttf") format("truetype"),
+}
+
+html{
+    font-family: 'Monocraft';
+    color: rgb(0, 255, 170);
+    text-shadow: 
+    1px 1px 0 #ff006f,
+    3px 3px 0 #710000,
+    7px 7px 0 #1c0000;
+}
+
+.timer-container {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+#timerDisplay {
+    font-size: 128px;
+    margin: 20px;
+   
+}
+button {
+    padding: 10px 20px;
+    font-size: 64px;
+    margin: 5px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(102, 0, 130, 0.765), rgba(220, 0, 135, 0.6));
+    background-size: 200% 200%;
+    color: rgb(0, 255, 170);
+    border: none; 
+    border-radius: 8px;
+    will-change: background, background-color;
+
+}
+
+input{
+    background-color: black;
+    color: rgb(0, 255, 170);
+}
+
+button:hover{
+    animation: jitter 4s ease infinite;
+}
+
+
+.textInput{
+    text-align: center;
+    padding: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6)), url("bcgk.jpg");
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+@keyframes jitter {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-2px, -2px) rotate(-3deg); }
+    50% { transform: translate(2px, 2px) rotate(3deg); }
+    75% { transform: translate(-2px, 2px) rotate(-3deg); }
+    100% { transform: translate(2px, -2px) rotate(3deg); }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#timeInput {
+    padding: 8px;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}

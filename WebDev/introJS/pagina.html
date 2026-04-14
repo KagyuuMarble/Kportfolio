@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>JavaScript Timer</title>
+</head>
+<body>
+   
+    <div class="timer-container">
+        <div>
+            <label for="timeInput">時間のセット (MM:SS): </label>
+            <input type="text" id="timeInput" value="02:30" pattern="[0-9]{1,2}:[0-9]{2}">
+            <button id="setTimeButton">Set Time</button>
+        </div>
+        <div id="timerDisplay">00:00</div>
+        <button id="startButton">Start</button>
+        <button id="pauseButton" disabled>Pause</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

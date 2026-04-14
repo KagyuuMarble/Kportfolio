@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Monocraft;
+    src: url('Monocraft.ttf');
+    src: local('Monocraft'), local('Monocraft'),
+    url("Monocraft.ttf") format("truetype"),
+}
+
+html{
+    font-family: 'Monocraft';
+}
+
+h1{
+    text-shadow: 
+    2px 2px 0 #ff0000,
+    4px 4px 0 #710000,
+    6px 6px 0 #1c0000;
+}
+
+.container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+  
+
+.column{
+    display: flex;
+    flex-direction: column;   
+    margin-right: auto;       /* Pushes column to the left */
+    justify-content: space-between;
+    width: fit-content;
+    height: 400px;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+}
+
+.bodyContainer{
+    display:flex;
+    flex-direction: row;
+    gap:8px;
+    width: fit-content;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.textContainer{
+
+    display:flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 4px;
+    margin-right: auto;       
+    width: fit-content;
+    height: 400px;
+    align-items: center;
+    color: white;
+    background:radial-gradient(circle at center, rgba(255, 217, 0, 0.29), rgba(0, 0, 0, 0.7) 60%);
+    overflow: auto;
+}
+
+.item{
+    color: white;
+    background:radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 60%, rgba(255, 217, 0, 0.29));
+    padding: 32px;
+    text-shadow: 
+    1px 1px 0 #ff0000,
+    2px 2px 0 #710000,
+    3px 3px 0 #1c0000;
+}
+
+.item:hover {
+    animation: pulse 0.5s ease infinite;
+}
+
+.icon{
+    background-image: url("kuromorimine.png");
+    background-size: contain;
+    display: block;
+    margin: 0%;
+    width: 180px;
+    height: 180px;
+}
+
+
+
+body {
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246), rgba(0, 0, 0, 0.3)), url("bcg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.scrolling-container {
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-shadow: 
+    1px 1px 0 #00ff5e,
+    2px 2px 0 #00714f,
+}  
+  .scrolling-text {
+    display: inline-block;
+    padding-left: 100%; /* Start off-screen */
+    animation: scroll 15s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
