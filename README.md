@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Kportfolio — University Projects
 
 A curated collection of coursework and exercises from computer science studies, organized by subject area. Each folder contains source code, assets, and (where applicable) supporting documentation from original assignments.
@@ -106,5 +106,4 @@ g++ -o token-ring main.cpp && ./token-ring 4
 Academic coursework — see individual files for authorship and course details.
 =======
 # Kportfolio
-projects portfolio for job interviews and curriculum indexing
->>>>>>> 7cd7c1a76f29794d82ad1147cb39d851f898c812
+
